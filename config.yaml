@@ -1,0 +1,6 @@
+name: codeigniter4sae
+version: 1
+# URL÷ÿ–¥
+handle:
+- rewrite: if(!is_dir() && !is_file() && path ~ "/") goto "/index.php?%{QUERY_STRING}"
+	

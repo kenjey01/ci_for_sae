@@ -24,7 +24,7 @@
  * @author		ExpressionEngine Dev Team
  * @link		http://codeigniter.com/user_guide/libraries/file_uploading.html
  */
-class CI_Upload {
+class SAE_Upload {
 
 	public $max_size				= 0;
 	public $max_width				= 0;
@@ -72,7 +72,7 @@ class CI_Upload {
 			$this->initialize($props);
 		}
 		log_message('debug', "Upload Class Initialized");
-
+		
 	}
 
 	// --------------------------------------------------------------------
@@ -1117,4 +1117,4 @@ class CI_Upload {
 // END Upload Class
 
 /* End of file Upload.php */
-/* Location: ./system/libraries/Upload.php */
+/* Location: ./application/libraries/Upload.php */

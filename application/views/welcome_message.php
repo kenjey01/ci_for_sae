@@ -67,18 +67,42 @@
 <body>
 
 <div id="container">
-	<h1>Welcome to CodeIgniter!</h1>
+	<h1>Welcome to CodeIgniter For SinaAppEngine!</h1>
 
 	<div id="body">
-		<p>The page you are looking at is being generated dynamically by CodeIgniter.</p>
+		<p>欢迎使用CodeIgniter 2.1.3 For SAE</p>
 
-		<p>If you would like to edit this page you'll find it located at:</p>
-		<code>application/views/welcome_message.php</code>
+		<p>此CI框架适应SAE环境，主要修改如下：&nbsp;&nbsp; <a href="/welcome/log">更多修改日志&amp;代码示例</a></p>
+		<code>
+		1.Mysql数据库 进行了读写的主从分离（主库写、从库读）<br>
+		2.数据缓存 与 页面缓存 支持memcache和kvdb两种方式<br>
+		3.Email类 使用原生SAE的邮件类<br>
+		4.文件上传类 使用Storage保存<br>
+		5.图像处理类 仅支持GD2函数<br>
+		6.验证码类 使用原生SAE的Vcode类<br>
+		7.日志类 使用原生SAE日志中心<br>
+		8.URL重写，隐藏 index.php
+		</code>
 
-		<p>The corresponding controller for this page is found at:</p>
-		<code>application/controllers/welcome.php</code>
-
-		<p>If you are exploring CodeIgniter for the very first time, you should start by reading the <a href="user_guide/">User Guide</a>.</p>
+		<p>测试页面</p>
+		<code>
+			<a href="/welcome/cache" target="_blank">数据缓存</a>&nbsp;&nbsp;
+			<a href="/upload/index" target="_blank">文件上传</a>&nbsp;&nbsp;
+			<a href="/welcome/vcode" target="_blank">验证码</a>&nbsp;&nbsp;
+		</code>
+		
+		<p>CI手册</p>
+		<code>
+		<a href="http://ellislab.com/codeigniter/user-guide/index.html" target="_blank">英文版</a>&nbsp;&nbsp;
+		<a href="http://codeigniter.org.cn/user_guide/index.html" target="_blank">中文版</a>&nbsp;&nbsp;
+		<a href="http://www.kuaipan.cn/file/id_11486280147820426.htm" target="_blank">中文CHM版</a>
+		</code>
+		<p>相关链接</p>
+		<code>
+			<a href="http://codeigniter.org.cn/" target="_blank">CI中国</a>&nbsp;&nbsp;
+			<a href="http://codeigniter.org.cn/forums/forum.php" target="_blank">CI开发者社区</a>&nbsp;&nbsp;
+			<a href="http://sae.sina.com.cn/" title="SinaAppEngine" target="_blank"><img src="http://static.sae.sina.com.cn/image/poweredby/117X12px.gif"></a> 
+		</code>
 	</div>
 
 	<p class="footer">Page rendered in <strong>{elapsed_time}</strong> seconds</p>
